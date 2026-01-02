@@ -1,0 +1,84 @@
+/* Her starter desktop css */
+
+/* Body */
+#hvidbluse {
+  width: 300px;
+  height: auto;
+}
+
+.forsideintro,
+.ommigpreview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 100px;
+  background-color: var(--color-bg-grøn);
+}
+
+.temaer {
+  padding: 200px;
+  text-align: center;
+}
+
+.temaknap {
+  width: 450px;
+  height: 300px;
+  font-size: var(--desktop-font-size-h2);
+  align-content: center;
+}
+
+.ommigbillede {
+  width: 300px;
+  height: auto;
+}
+
+.ommigtekst {
+  width: 300px;
+}
+/* Her slutter desktop css */
+
+/* Her starter mobile css */
+@media (max-width: 450px) {
+  .forsideintro,
+  .ommigpreview {
+    display: grid;
+    grid: 1fr;
+    gap: 20px;
+  }
+  .temaer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    align-content: center;
+  }
+  .temaknap {
+    width: 200px;
+    height: 150px;
+    font-size: var(--mobile-font-size-h2);
+    align-content: center;
+  }
+
+  img {
+    max-width: 300px;
+  }
+}
+
+/* Her slutter mobile css */
+
+/* Her starter generelt css */
+a {
+  background-color: var(--color-bg-brun);
+}
+
+.tema-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+#hvidbluse,
+.ommigbillede {
+  border-radius: 100px;
+}
+/* Her slutter generelt css */

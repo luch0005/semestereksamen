@@ -1,0 +1,180 @@
+/* Her starter desktop css */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1400px;
+}
+/* Header */
+.lunalogo {
+  font-size: var(--desktop-font-size-h4);
+}
+
+/* Body */
+.overskrift {
+  padding: 40px;
+}
+
+.opgaveogbilleder {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+}
+
+/* Footer */
+footer {
+  padding: 50px;
+}
+
+/* Font */
+
+h1 {
+  font-size: var(--desktop-font-size-h1);
+}
+h2 {
+  font-size: var(--desktop-font-size-h2);
+}
+h3 {
+  font-size: var(--desktop-font-size-h3);
+}
+h4 {
+  font-size: var(--desktop-font-size-h4);
+}
+p {
+  font-size: var(--desktop-font-size-p);
+}
+/* Her slutter desktop css */
+
+/* Her starter mobile css */
+@media (max-width: 450px) {
+  /* Header */
+
+  /* Body */
+  .overskrift {
+    padding: 20px;
+  }
+
+  .opgaveogbilleder {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    background-color: var(--color-bg-grøn);
+    padding: 20px;
+  }
+
+  /* Footer */
+
+  /* Font */
+  h1 {
+    font-size: var(--mobile-font-size-h1);
+  }
+  h2 {
+    font-size: var(--mobile-font-size-h2);
+  }
+  h3 {
+    font-size: var(--mobile-font-size-h3);
+  }
+  h4 {
+    font-size: var(--mobile-font-size-h4);
+  }
+  p {
+    font-size: var(--mobile-font-size-p);
+  }
+}
+/* Her slutter mobile css */
+
+/* Her starter generelt css */
+
+/* Header */
+header {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  gap: 1.5rem;
+}
+
+.lunalogo,
+.menu a,
+.knap {
+  background-color: #ccb49a;
+  padding: 0.4rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  font-family: var(--font-lily);
+}
+
+.menu a:hover {
+  color: var(--hover-color);
+}
+/* Body */
+body {
+  background-color: var(--color-bg-creme);
+}
+
+.overskrift {
+  background-color: var(--color-bg-grøn);
+  text-align: center;
+}
+
+/* Font */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1,
+h2 {
+  font-family: var(--font-lily);
+}
+
+h3,
+h4,
+p {
+  font-family: var(--font-eb);
+}
+
+.temah2 {
+  text-align: center;
+}
+
+.temaknap {
+  font-family: var(--font-lily);
+  padding: 60px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.socialemedier img {
+  width: 50px;
+  height: 100%;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.socialemedier img:hover {
+  opacity: 1;
+}
+/* Her slutter generelt css */
