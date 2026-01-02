@@ -1,0 +1,32 @@
+:root {
+  /* Generelt til css variabler */
+
+  /* Baggrund */
+  --color-bg-creme: #ffefdd;
+  --color-bg-grøn: #89ab80;
+  --color-bg-brun: #ccb49a;
+
+  /* Font */
+  --font-lily: "Lily Script One", normal;
+  --font-eb: "EB Garamond", normal;
+  --hover-color: #ffefdd;
+  /* Her slutter generelt til css variabler */
+
+  /* Her starter desktop css variabler */
+  --desktop-font-size-h1: 64px;
+  --desktop-font-size-h2: 40px;
+  --desktop-font-size-h3: 32px;
+  --desktop-font-size-h4: 28px;
+  --desktop-font-size-p: 24px;
+  --desktop-font-size-a: 24px;
+  /* Her slutter desktop css variabler */
+
+  /* Her starter mobile css variabler */
+  --mobile-font-size-h1: 40px;
+  --mobile-font-size-h2: 32px;
+  --mobile-font-size-h3: 24px;
+  --mobile-font-size-h4: 20px;
+  --mobile-font-size-p: 16px;
+  --mobile-font-size-a: 16px;
+  /* Her slutter mobile css variabler */
+}
