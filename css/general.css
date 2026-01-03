@@ -5,26 +5,6 @@
   box-sizing: border-box;
   max-width: 1400px;
 }
-/* Header */
-.lunalogo {
-  font-size: var(--desktop-font-size-h4);
-}
-
-/* Body */
-.overskrift {
-  padding: 40px;
-}
-
-.opgaveogbilleder {
-  display: grid;
-  /* grid-template-columns: 1fr; */
-}
-
-/* Footer */
-footer {
-  padding: 50px;
-}
-
 /* Font */
 
 h1 {
@@ -42,27 +22,63 @@ h4 {
 p {
   font-size: var(--desktop-font-size-p);
 }
+/* Header */
+.lunalogo {
+  font-size: var(--desktop-font-size-h4);
+}
+
+/* Body */
+.temaintro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+}
+.overskrift {
+  padding: 40px;
+}
+
+/* Footer */
+footer {
+  padding: 50px;
+}
+
 /* Her slutter desktop css */
 
 /* Her starter mobile css */
 @media (max-width: 450px) {
+  * {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 430px;
+  }
   /* Header */
 
   /* Body */
   .overskrift {
-    padding: 20px;
+    padding: 30px;
+  }
+
+  .temaintro {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .opgaveogbilleder {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-    background-color: var(--color-bg-grøn);
     padding: 20px;
   }
 
   /* Footer */
 
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
   /* Font */
   h1 {
     font-size: var(--mobile-font-size-h1);
@@ -83,7 +99,9 @@ p {
 /* Her slutter mobile css */
 
 /* Her starter generelt css */
-
+* {
+  font-weight: 400;
+}
 /* Header */
 header {
   top: 0;
@@ -102,6 +120,10 @@ nav {
   width: 100%;
 }
 
+.lunalogo {
+  position: absolute;
+}
+
 .menu {
   display: flex;
   list-style: none;
@@ -114,7 +136,7 @@ nav {
 .lunalogo,
 .menu a,
 .knap {
-  background-color: #ccb49a;
+  background-color: var(--color-bg-brun);
   padding: 0.4rem 1.2rem;
   border-radius: 4px;
   text-decoration: none;
@@ -133,6 +155,10 @@ body {
 .overskrift {
   background-color: var(--color-bg-grøn);
   text-align: center;
+}
+
+.opgaveogbilleder {
+  background-color: var(--color-bg-grøn);
 }
 
 /* Font */
