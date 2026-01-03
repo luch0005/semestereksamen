@@ -7,7 +7,7 @@
 }
 
 .forsideintro,
-.ommigpreview {
+.ommigforside {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 100px;
@@ -39,10 +39,10 @@
 /* Her starter mobile css */
 @media (max-width: 450px) {
   .forsideintro,
-  .ommigpreview {
+  .ommigforside {
     display: grid;
-    grid: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
   .temaer {
     padding-top: 30px;
