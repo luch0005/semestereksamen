@@ -111,6 +111,49 @@
           </p>
         </div>
       </section>
+      <section class="kontakt_form">
+        <article id="form-info">
+          <h2>Har du brug for at komme i kontakt med mig?</h2>
+        </article>
+        <form id="webform">
+          <fieldset class="form-grid">
+            <div class="form-group">
+              <label for="first_name">Fornavn</label>
+              <input required type="text" id="fornavn" />
+              <p class="error-message" hidden>Please enter a value</p>
+            </div>
+            <div class="form-group">
+              <label for="last_name">Efternavn</label>
+              <input required type="text" id="efternavn" />
+              <p class="error-message" hidden>Please enter a value</p>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input required type="email" id="mail" />
+              <p class="error-message" hidden>Please enter a value</p>
+            </div>
+            <div class="form-group">
+              <label for="tlf">Telefonnummer</label>
+              <input required type="tel" id="tlf" />
+              <p class="error-message" hidden>Please enter a value</p>
+            </div>
+            <div class="form-group">
+              <label for="last_name">Skriv din besked her</label>
+              <input required type="text" id="tekst" />
+              <p class="error-message" hidden>Please enter a value</p>
+            </div>
+          </fieldset>
+          <br />
+          <div>
+            <input type="checkbox" id="accept_terms" />
+            <label for="accept_terms"
+              >Accepter venligst vores terms & conditions</label
+            >
+          </div>
+
+          <button type="submit">Indsend oplysninger</button>
+        </form>
+      </section>
     </main>
     <footer>
       <section class="footer">
@@ -138,5 +181,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/kontakt.js"></script>
   </body>
 </html>

@@ -11,6 +11,100 @@
   gap: 20px;
   padding: 30px;
 }
+
+.kontakt_form {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+#webform {
+  background-color: var(--color-bg-brun);
+  padding: 30px;
+  border-radius: 12px;
+  font-family: var(--font-eb);
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-group input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.form-grid > .form-group:nth-child(6) {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.form-grid > .form-group:nth-child(7) {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+input:focus {
+  outline: 2px solid #917b65;
+}
+
+#accept_terms {
+  margin-right: 0.5rem;
+}
+
+#accept_terms + label {
+  display: inline;
+  position: static;
+}
+
+button {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 999px;
+  border: none;
+  background-color: var(--color-bg-creme);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: block;
+  margin-left: 0;
+  font-family: var(--font-eb);
+}
+
+button:hover {
+  background-color: var(--color-bg-brun);
+}
+
+.error-message {
+  color: #b00020;
+  font-size: 0.8rem;
+}
 /* Her slutter desktop css */
 
 /* Her starter mobile css */
@@ -19,6 +113,24 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid > .form-group:nth-child(6),
+  .form-grid > .form-group:nth-child(7) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+
+  #webform {
+    padding: 1.5rem;
+  }
+
+  button {
+    width: 100%;
   }
 }
 /* Her slutter mobile css */
