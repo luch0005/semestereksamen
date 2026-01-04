@@ -11,11 +11,11 @@
   width: 450px;
   height: 300px;
   font-size: var(--desktop-font-size-h3);
-  align-content: center;
 }
 
 .tema-boks {
   padding: 30px;
+  text-align: center;
 }
 
 /* Her slutter desktop css */
