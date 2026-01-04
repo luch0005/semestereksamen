@@ -6,6 +6,7 @@
   grid-template-rows: auto 1fr;
   gap: 20px;
   padding: 30px;
+  align-items: center;
 }
 
 #tema2_titel1 {
@@ -41,6 +42,19 @@
     "billede5 tekst4 tekst4";
 }
 
+.grid_mobilsite {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+  align-items: center;
+}
+
+.tema2billeder_mobil {
+  height: 500px;
+  width: auto;
+}
+
 /* Tekstfelter */
 .tekst1 {
   grid-area: tekst1;
@@ -71,8 +85,6 @@
 .billede5 {
   grid-area: billede5;
 }
-
-/* Billeder generelt */
 .grid_tekst_tema2 img {
   width: 100%;
   height: auto;
@@ -90,21 +102,18 @@
   .opgaveogbilleder {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+
     gap: 20px;
   }
 
   #tema2_titel1 {
     grid-column: 1;
-    grid-row: auto;
   }
   #tema2_billede1 {
     grid-column: 1;
-    grid-row: auto;
   }
   #tema2_billede2 {
     grid-column: 1;
-    grid-row: auto;
   }
 
   .grid_tekst_tema2 {
@@ -124,9 +133,16 @@
   .tema2billeder_små {
     width: 270px;
   }
+
+  .grid_mobilsite {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .tema2billeder_mobil {
+    width: 340px;
+    height: auto;
+  }
 }
 /* Her slutter mobile css */
-
-/* Her starter generelt css */
-
-/* Her slutter generelt css */

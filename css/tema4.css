@@ -1,9 +1,81 @@
 /* Her starter desktop css */
+.opgaveogbilleder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  padding: 30px;
+  align-items: center;
+}
+
+#tema4_titel {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+}
+
+#tema4_billede1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#tema4_billede2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#tema4_billede3 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.tema4billeder {
+  width: auto;
+  height: 400px;
+}
+
+.grid_tekst_tema4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
 
 /* Her slutter desktop css */
 
 /* Her starter mobile css */
+@media (max-width: 450px) {
+  .tema4billeder {
+    width: 300px;
+    height: auto;
+  }
 
+  .opgaveogbilleder {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  #tema4_titel {
+    grid-column: 1;
+  }
+  #tema4_billede1 {
+    grid-column: 1;
+  }
+  #tema4_billede2 {
+    grid-column: 1;
+  }
+  #tema4_billede3 {
+    grid-column: 1;
+  }
+  .grid_tekst_tema4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+}
 /* Her slutter mobile css */
 
 /* Her starter generelt css */
