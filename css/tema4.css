@@ -58,15 +58,19 @@
 
   #tema4_titel {
     grid-column: 1;
+    grid-row: auto;
   }
   #tema4_billede1 {
     grid-column: 1;
+    grid-row: auto;
   }
   #tema4_billede2 {
     grid-column: 1;
+    grid-row: auto;
   }
   #tema4_billede3 {
     grid-column: 1;
+    grid-row: auto;
   }
 
   .grid_tekst_tema4 {

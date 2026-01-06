@@ -1,10 +1,4 @@
 /* Her starter desktop css */
-#portrait {
-  width: 300px;
-  height: auto;
-  border-radius: 100px;
-}
-
 .ommig_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

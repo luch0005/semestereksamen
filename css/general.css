@@ -1,10 +1,20 @@
 /* Her starter desktop css */
-* {
+
+.lunabillede {
+  width: 300px;
+  height: auto;
+}
+
+main {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   max-width: 1400px;
 }
+header {
+  margin: 0;
+}
+
 /* Font */
 
 h1 {
@@ -22,9 +32,11 @@ h4 {
 p {
   font-size: var(--desktop-font-size-p);
 }
+
 /* Header */
 .lunalogo {
-  font-size: var(--desktop-font-size-h4);
+  width: 160px;
+  height: auto;
 }
 
 /* Body */
@@ -32,9 +44,14 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 50px;
+  gap: 30px;
 }
 .overskrift {
   padding: 40px;
+}
+
+.linkknap {
+  font-size: var(--desktop-font-size-p);
 }
 
 /* Footer */
@@ -54,13 +71,26 @@ footer {
 
 /* Her starter mobile css */
 @media (max-width: 450px) {
-  * {
+  main {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     max-width: 430px;
   }
+  header {
+    margin: 0;
+  }
+
+  .lunabillede {
+    max-width: 300px;
+    height: auto;
+  }
+
   /* Header */
+  .lunalogo {
+    width: 100px;
+    height: auto;
+  }
 
   /* Body */
   .overskrift {
@@ -80,6 +110,10 @@ footer {
     padding: 20px;
   }
 
+  .linkknap {
+    font-size: var(--mobile-font-size-p);
+  }
+
   /* Footer */
 
   .footer {
@@ -88,7 +122,6 @@ footer {
     text-align: center;
     gap: 20px;
     padding: 10px;
-    text-align: center;
   }
   /* Font */
   h1 {
@@ -113,26 +146,26 @@ footer {
 * {
   font-weight: 400;
 }
+
+.lunabillede {
+  border-radius: 100px;
+}
 /* Header */
 header {
   top: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   width: 100%;
   box-sizing: border-box;
-  z-index: 1000;
 }
 
 nav {
   display: flex;
   align-items: center;
   width: 100%;
-}
-
-.lunalogo {
-  position: absolute;
+  position: relative;
 }
 
 .menu {
@@ -144,20 +177,86 @@ nav {
   gap: 1.5rem;
 }
 
-.lunalogo,
-.menu a,
-.knap {
-  background-color: var(--color-bg-brun);
-  padding: 0.4rem 1.2rem;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #000;
-  font-family: var(--font-lily);
+.menu a {
+  color: #000000;
 }
 
 .menu a:hover {
   color: var(--hover-color);
 }
+
+/*************/
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: none;
+  margin-left: auto;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-bg-brun);
+  transition: 0.2s linear;
+}
+
+@media (max-width: 450px) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -7px);
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: var(--color-bg-brun);
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+/*************/
+
 /* Body */
 body {
   background-color: var(--color-bg-creme);
@@ -170,6 +269,31 @@ body {
 
 .opgaveogbilleder {
   background-color: var(--color-bg-grøn);
+}
+
+.linkknap {
+  text-decoration: underline;
+}
+
+.linkknap:hover {
+  background-color: var(--color-bg-brun);
+  transition: 0.2s ease;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.knap {
+  background-color: var(--color-bg-brun);
+  padding: 0.4rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  font-family: var(--font-lily);
+}
+
+.knap:hover,
+.temaknap:hover {
+  color: var(--hover-color);
 }
 
 /* Font */
@@ -189,16 +313,6 @@ p {
   font-family: var(--font-eb);
 }
 
-.temah2 {
-  text-align: center;
-}
-
-.temaknap {
-  font-family: var(--font-lily);
-  padding: 60px;
-  text-align: center;
-}
-
 /* Footer */
 .socialemedier img {
   width: 50px;
@@ -210,4 +324,5 @@ p {
 .socialemedier img:hover {
   opacity: 1;
 }
+
 /* Her slutter generelt css */
