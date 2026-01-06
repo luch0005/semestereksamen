@@ -46,18 +46,20 @@
   .opgaveogbilleder {
     display: grid;
     grid-template-columns: 1fr;
-
     gap: 20px;
   }
 
   #tema3_titel {
     grid-column: 1;
+    grid-row: auto;
   }
   #tema3_billede1 {
     grid-column: 1;
+    grid-row: auto;
   }
   #tema3_billede2 {
     grid-column: 1;
+    grid-row: auto;
   }
 
   .grid_tekst_tema3 {

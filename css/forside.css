@@ -1,20 +1,15 @@
 /* Her starter desktop css */
 
 /* Body */
-#hvidbluse {
-  width: 300px;
-  height: auto;
-}
 
 .forsideintro {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   padding: 100px;
   background-color: var(--color-bg-grøn);
 }
 
 .temaer {
-  padding: 200px;
   text-align: center;
 }
 
@@ -22,14 +17,18 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  align-items: center;
+  padding: 50px;
 }
 
 .temaknap {
   width: 450px;
   height: 300px;
-  font-size: var(--desktop-font-size-h2);
-  align-content: center;
+  font-size: var(--desktop-font-size-h3);
+}
+
+.tema-boks {
+  padding: 30px;
+  text-align: center;
 }
 
 .ommigforside {
@@ -38,7 +37,7 @@
   grid-template-rows: auto 1fr;
   gap: 20px;
   padding: 30px;
-  align-items: center;
+  justify-content: center;
   background-color: var(--color-bg-grøn);
 }
 
@@ -57,12 +56,6 @@
 #ommigbillede {
   grid-column: 2;
   grid-row: 2;
-  width: 300px;
-  height: auto;
-}
-#ommigbillede img {
-  width: 300px;
-  height: auto;
 }
 
 .ommigtekst {
@@ -72,49 +65,57 @@
 
 /* Her starter mobile css */
 @media (max-width: 450px) {
+  .tema-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+
   .forsideintro,
   .ommigforside {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
+    justify-content: center;
+  }
+  #ommigoverskrift {
+    grid-column: 1;
+    grid-row: auto;
+    text-align: center;
   }
 
-  .temaer {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    align-content: center;
+  #ommigtekst {
+    grid-column: 1;
+    grid-row: auto;
+    width: 370px;
   }
 
-  .tema-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    align-items: center;
-  }
-
-  .temaknap {
-    width: 200px;
-    height: 150px;
-    font-size: var(--mobile-font-size-h2);
-    align-content: center;
-  }
-
-  img {
-    max-width: 300px;
+  #ommigbillede {
+    grid-column: 1;
+    grid-row: auto;
+    width: 300px;
+    height: auto;
   }
 }
 
 /* Her slutter mobile css */
 
 /* Her starter generelt css */
-a {
+.tema-boks {
+  background-color: var(--color-bg-brun);
+  border-radius: 4px;
+}
+
+.temaknap {
+  font-family: var(--font-lily);
+  align-content: center;
+  border-radius: 4px;
   background-color: var(--color-bg-brun);
 }
 
-#hvidbluse,
-#ommigbillede img {
-  border-radius: 100px;
+.tema-boks h2,
+a {
+  text-align: center;
 }
 /* Her slutter generelt css */
